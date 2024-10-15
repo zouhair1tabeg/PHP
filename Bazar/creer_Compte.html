@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url('bzz1.jpg')no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        h1{
+            color: #E2E2D4;
+            text-align: center;
+        }
+        form{
+            backdrop-filter: blur(1px);
+            border: 4px double brown;
+            padding: 20px;
+        }
+        label{
+            color: white;
+        }
+        input{
+            background: transparent;
+            border: 1.5px brown solid;
+            color: white;
+        }
+    </style>
+    <form action="add_Client.php" method="post">
+        <h1>Sing in</h1>
+        <table>
+            <tr>
+                <td><label>Nom:</label></td>
+                <td><input type="text" name="Nom" id="s1"></td>
+                <td><label id="n1"></label></td>
+            </tr>
+            
+            <tr>
+                <td><label>Adresse:</label></td>
+                <td><input type="text" name="Adresse" id="s2"></td>
+                <td><label id="n2"></label></td>
+            </tr>
+            
+            <tr>
+                <td><label>Telephone:</label></td>
+                <td><input type="text" name="Telephone" id="s3"></td>
+                <td><label id="n3"></label></td>
+            </tr>
+            
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="text" name="Email" id="s4"></td>
+                <td><label id="n4"></label></td>
+            </tr>
+
+            <tr>
+                <td><label>Mot de Passe:</label></td>
+                <td><input type="password" name="MotDePasse" id="s5"></td>
+                <td><label id="n5"></label></td>
+            </tr>
+            
+            <tr>
+                <td><td><button class="btn btn-outline-info" type="submit">Sign in</button></td></td>
+            </tr>
+        </table>
+    </form>
+    <script src="script2.js"></script>
+</body>
+</html>

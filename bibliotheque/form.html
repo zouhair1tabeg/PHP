@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table{
+            border: 4px black double;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: rgb(102, 227, 255);
+        }
+        input{
+            border: none;
+            border-bottom: 3px dotted black;
+            background-color: rgb(102, 227, 255);
+        }
+        button{
+            border-radius: 10px;
+            background-color: chartreuse;
+            color: blueviolet;
+        }
+    </style>
+    <form action="add auteur.php" method="post">
+        <h2>Ajouter un Auteur</h2>
+        <table>
+            <tr>
+                <td><label>Prenom:</label></td>
+                <td><input type="text" name="Prenom"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Nom:</label></td>
+                <td><input type="text" name="Nom"></td>
+            </tr>
+            
+            <tr>
+                <td><label>CIN:</label></td>
+                <td><input type="text" name="CIN"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="text" name="Email"></td>
+            </tr>
+            
+            <tr>
+                <td><button type="submit">Ajouter</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="add livre.php" method="post">
+        <h2>Ajouter un Livre</h2>
+        <table>
+            <tr>
+                <td><label>Titre:</label></td>
+                <td><input type="text" name="Titre"></td>
+            </tr>
+
+            <tr>
+                <td><label>Auteur ID:</label></td>
+                <td><input type="text" name="AuteurID"></td>
+            </tr>
+            
+            <tr>
+                <td><label>ISBN:</label></td>
+                <td><input type="text" name="ISBN"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Annee de Publication:</label></td>
+                <td><input type="text" name="AnneePublication"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Genre:</label></td>
+                <td><input type="text" name="Genre"></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit">Ajouter</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

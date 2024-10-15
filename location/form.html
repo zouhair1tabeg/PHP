@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ajouter une Voiture</h2>
+    <form action="add_voiture.php" method="post">
+        <table>
+            <tr>
+                <td><label>Marque:</label></td>
+                <td><input type="text" name="Marque"></td>
+            </tr>
+
+            <tr>
+                <td><label>Modele:</label></td>
+                <td><input type="text" name="Modele"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Annee:</label></td>
+                <td><input type="text" name="Annee"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Immatriculation:</label></td>
+                <td><input type="text" name="Immatriculation"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Disponibilite:</label></td>
+                <td><input type="checkbox" name="Disponibilite" value="1"></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit">Ajouter</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <h2>Informations sur le Client</h2>
+    <form action="add_client.php" method="post">
+        <table>
+            <tr>
+                <td><label>Nom:</label></td>
+                <td><input type="text" name="Nom"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Prenom:</label></td>
+                <td><input type="text" name="Prenom"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Adresse:</label></td>
+                <td><input type="text" name="Adresse"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Telephone:</label></td>
+                <td><input type="text" name="Telephone"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Email:</label></td>
+                <td><input type="text" name="Email"></td>
+            </tr>
+
+            <tr>
+                <td><label>Password:</label></td>
+                <td><input type="password" name="MotDePasse"></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit">Inscrir</button></td>
+            </tr>
+        </table>
+    </form>
+    
+    <h2>Locations</h2>
+    <form action="add_location.php" method="post">
+        <table>
+            <tr>
+                <td><label>Date de debut:</label></td>
+                <td><input type="date" name="DateDebut"></td>
+            </tr>
+
+            <tr>
+                <td><label>ID client</label></td>
+                <td><input type="text" name="ClientID"></td>
+            </tr>
+
+            <tr>
+                <td><label>ID voiture</label></td>
+                <td><input type="text" name="VoitureID"></td>
+            </tr>
+            
+            <tr>
+                <td><label>Date de fin:</label></td>
+                <td><input type="date" name="DateFin"></td>
+            </tr>
+
+            <tr>
+                <td><label>Prix:</label></td>
+                <td><input type="text" name="PrixTotal"></td>
+            </tr>
+
+            <tr>
+                <td><button type="submit">Ajouter</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
